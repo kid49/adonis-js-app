@@ -7,10 +7,10 @@
          content:
            application/x-www-form-urlencoded:
              schema:
-               $ref: '#definitions/register/Register'
+               $ref: '#definitions/Register'
            application/json:
               schema:
-                $ref: '#definitions/register/Register'
+                $ref: '#definitions/Register'
        responses:
          '201':
            description: user created, cek otp-verification email
