@@ -6,7 +6,6 @@
     "build": "node ace build --prod",
     "start": "node ace serve --watch",
     "start:prod": "node ./build/server.js",
-    "build1": "npm run compile",
     "postbuild": "node ace swagger:generate && cp -a docs/ build/docs"
   },
   "devDependencies": {
@@ -33,6 +32,6 @@
     "source-map-support": "^0.5.19"
   },
   "engines": {
-    "node": "14.16.1"
+    "node": "14.17.2"
   }
 }
