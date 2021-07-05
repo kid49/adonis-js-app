@@ -184,13 +184,13 @@ export default class BookingsController {
 
   public async create({}: HttpContextContract) {}
 
-  public async store({ request, auth, response, params }: HttpContextContract) {
+  public async store({ request, auth, response }: HttpContextContract) {
     await request.validate(BookingValidator);
     const play_date_start = request.input("play_date_start");
     const play_date_end = request.input("play_date_end");
     const fieldId = request.input("field");
 
-    const user = auth.user;
+    auth.user;
     const booking = await Booking.create({
       play_date_start,
       play_date_end,
@@ -215,9 +215,9 @@ export default class BookingsController {
 
   public async update({ params, request, response }: HttpContextContract) {
     let bookings = await Booking.findOrFail(params.id);
-    const play_date_start = request.input("play_date_start");
-    const play_date_end = request.input("play_date_end");
-    const fieldId = request.input("field");
+    request.input("play_date_start");
+    request.input("play_date_end");
+    request.input("field");
     await bookings.save();
     return response.ok({ message: "Updated" });
   }
@@ -230,10 +230,10 @@ export default class BookingsController {
 
   public async join({ params, response, request }: HttpContextContract) {
     let booking = await Booking.firstOrFail(params.id);
-    const play_date_start = request.input("play_date_start");
-    const play_date_end = request.input("play_date_end");
-    const fieldId = request.input("field");
-    const join = request.input("join");
+    request.input("play_date_start");
+    request.input("play_date_end");
+    request.input("field");
+    request.input("join");
     await booking.save();
     return response.ok({ message: "Update Join" });
   }

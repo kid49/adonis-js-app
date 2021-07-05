@@ -6,9 +6,7 @@ import {
   BaseModel,
   hasMany,
   HasMany,
-  manyToMany,
-  ManyToMany,
-} from '@ioc:Adonis/Lucid/Orm'
+} from "@ioc:Adonis/Lucid/Orm";
 import Venue from 'App/Models/Venue'
 import Field from 'App/Models/Field'
 import Booking from 'App/Models/Booking'

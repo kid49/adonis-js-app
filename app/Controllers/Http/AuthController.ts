@@ -35,7 +35,7 @@ export default class AuthController {
 
     const newUser = await User.create({ name, email, password, role });
     const otp_code = Math.floor(100000 + Math.random() * 900000);
-    let savecode = await Database.table("otp_codes").insert({
+    await Database.table("otp_codes").insert({
       otp_code: otp_code,
       user_id: newUser.id,
     });
@@ -85,7 +85,7 @@ export default class AuthController {
     });
 
     try {
-      const payload = await request.validate({ schema: userSchema });
+      await request.validate({ schema: userSchema });
       const email = request.input("email");
       const password = request.input("password");
 
