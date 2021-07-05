@@ -24,10 +24,10 @@
          content:
            application/x-www-form-urlencoded:
              schema:
-               $ref: 'definitions/register/#definitions/Login'
+               $ref: '#definitions/Login'
            application/json:
               schema:
-                $ref: 'definitions/register/#definitions/Login'
+                $ref: '#definitions/Login'
        responses:
          '201':
            description: Success Login
