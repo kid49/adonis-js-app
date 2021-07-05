@@ -1,33 +1,33 @@
 /register:
-     post:
-       tags:
-         - Authentication
-       requestBody:
-         required: true
-         content:
-           application/x-www-form-urlencoded:
-             schema:
-               $ref: '#definitions/Register'
-           application/json:
-              schema:
-                $ref: '#definitions/Register'
-       responses:
-         '201':
-           description: user created, cek otp-verification email
+  post:
+    tags:
+      - Authentication
+    requestBody:
+      required: true
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#definitions/Register'
+        application/json:
+          schema:
+            $ref: '#definitions/Register'
+    responses:
+      '201':
+        description: user created, cek otp-verification email
 
 /login:
-     post:
-       tags:
-         - Authentication
-       requestBody:
-         required: true
-         content:
-           application/x-www-form-urlencoded:
-             schema:
-               $ref: '#definitions/Login'
-           application/json:
-              schema:
-                $ref: '#definitions/Login'
-       responses:
-         '201':
-           description: Success Login
+  post:
+    tags:
+      - Authentication
+    requestBody:
+      required: true
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#definitions/Login'
+        application/json:
+          schema:
+            $ref: '#definitions/Login'
+    responses:
+      '201':
+        description: Success Login
