@@ -30,7 +30,7 @@ export default {
       "app/**/*.ts",
       "docs/swagger/**/*.yml",
       "start/routes.ts",
-      "app/**/*.js",
+      "**/*.yml",
     ],
     basePath: "/api/v1/",
   },

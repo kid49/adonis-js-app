@@ -60,7 +60,7 @@ export default class AuthController {
 
   /**
    * @swagger
-   * /api/v1/login:
+   * /login:
    *  post:
    *    tags:
    *      - Authentication
