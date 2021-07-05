@@ -10,7 +10,7 @@ export default class BookingValidator {
    * For example:
    * 1. The username must be of data type string. But then also, it should
    *    not contain special characters or numbers.
-   *    ```
+   *    ```hero
    *     schema.string({}, [ rules.alpha() ])
    *    ```
    *
