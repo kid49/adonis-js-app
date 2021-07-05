@@ -6,27 +6,6 @@ import Mail from "@ioc:Adonis/Addons/Mail";
 
 
 export default class AuthController {
-  /**
-   *
-   * @swagger
-   * /register:
-   *  post:
-   *    tags:
-   *      - Authentication
-   *    requestBody:
-   *      required: true
-   *      content:
-   *        application/x-www-form-urlencoded:
-   *          schema:
-   *            $ref: '#definitions/Register'
-   *        application/json:
-   *           schema:
-   *             $ref: '#definitions/Register'
-   *    responses:
-   *      '201':
-   *        description: user created, cek otp-verification email
-   */
-
   public async register({ request, response }: HttpContextContract) {
     const name = request.input("name");
     const email = request.input("email");
@@ -57,26 +36,6 @@ export default class AuthController {
       });
     }
   }
-
-  /**
-   * @swagger
-   * /login:
-   *  post:
-   *    tags:
-   *      - Authentication
-   *    requestBody:
-   *      required: true
-   *      content:
-   *        application/x-www-form-urlencoded:
-   *          schema:
-   *            $ref: '#definitions/Login'
-   *        application/json:
-   *           schema:
-   *             $ref: '#definitions/Login'
-   *    responses:
-   *      '201':
-   *        description: Success Login
-   */
 
   public async login({ request, response, auth }: HttpContextContract) {
     const userSchema = schema.create({
