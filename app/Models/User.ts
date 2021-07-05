@@ -12,40 +12,6 @@ import Field from 'App/Models/Field'
 import Booking from 'App/Models/Booking'
 
 export default class User extends BaseModel {
-  /**
-   * @swagger
-   * definitions:
-   *  Register:
-   *    type: object
-   *    properties:
-   *      name:
-   *        type: string
-   *      email:
-   *        type: string
-   *      password:
-   *        type: string
-   *      role:
-   *        type: string
-   *    required:
-   *      - name
-   *      - email
-   *      - password
-   *      - role
-   */
-  /**
-   * @swagger
-   * definitions:
-   *  Login:
-   *    type: object
-   *    properties:
-   *      email:
-   *        type: string
-   *      password:
-   *        type: string
-   *    required:
-   *      - email
-   *      - password
-   */
   @column({ isPrimary: true })
   public id: number;
 
