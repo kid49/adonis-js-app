@@ -1,103 +1,156 @@
 /api/v1/bookings:
-       get:
-         security:
-           - bearerAuth: []
-         tags:
-           - Booking
-         responses:
-           200:
-             description: success get all data booking
-             content:
-               application/json:
-                 schemas:
-                   message:
-                     type: string
-                     example:
-                       message: success fetch booking
-                   data:
-                     type: array
-                     items:
-                       type: object
-                       properties:
-                         id: int
-                         play_date_start: string
-                         play_date_end: string
-                         fieldId: int
+      get:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
 
 /api/v1/bookings:
-       post:
-         security:
-           - bearerAuth: []
-         tags:
-           - Booking
-         responses:
-           200:
-             description: success get all data booking
-             content:
-               application/json:
-                 schemas:
-                   message:
-                     type: string
-                     example:
-                       message: success fetch booking
-                   data:
-                     type: array
-                     items:
-                       type: object
-                       properties:
-                         id: int
-                         play_date_start: string
-                         play_date_end: string
-                         fieldId: int
+      post:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
 
 /api/v1/bookings:
-       get:
-         security:
-           - bearerAuth: []
-         tags:
-           - Booking
-         responses:
-           200:
-             description: success get all data booking
-             content:
-               application/json:
-                 schemas:
-                   message:
-                     type: string
-                     example:
-                       message: success fetch booking
-                   data:
-                     type: array
-                     items:
-                       type: object
-                       properties:
-                         id: int
-                         play_date_start: string
-                         play_date_end: string
-                         fieldId: int
+      get:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
 
 /api/v1/bookings:
-       put:
-         security:
-           - bearerAuth: []
-         tags:
-           - Booking
-         responses:
-           200:
-             description: success get all data booking
-             content:
-               application/json:
-                 schemas:
-                   message:
-                     type: string
-                     example:
-                       message: success fetch booking
-                   data:
-                     type: array
-                     items:
-                       type: object
-                       properties:
-                         id: int
-                         play_date_start: string
-                         play_date_end: string
-                         fieldId: int
+      put:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
+
+/api/v1/bookings:
+      delete:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
+
+/api/v1/bookings/:id/join:
+      put:
+        security:
+          - bearerAuth: []
+        tags:
+          - Booking
+        responses:
+          200:
+            description: success get all data booking
+            content:
+              application/json:
+                schemas:
+                  message:
+                    type: string
+                    example:
+                      message: success fetch booking
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: int
+                        play_date_start: string
+                        play_date_end: string
+                        fieldId: int
+                        join: int
