@@ -1,8 +1,6 @@
-import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import User from 'App/Models/User'
-import Field from 'App/Models/Field'
-import Booking from 'App/Models/Booking'
-import BookingValidator from 'App/Validators/BookingValidator'
+import { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
+import Booking from "App/Models/Booking";
+import BookingValidator from "App/Validators/BookingValidator";
 
 interface FieldInterface {
   name: string;
