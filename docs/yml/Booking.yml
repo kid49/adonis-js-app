@@ -24,7 +24,6 @@
                         play_date_end: string
                         fieldId: int
 
-/api/v1/bookings:
       post:
         security:
           - bearerAuth: []
@@ -50,7 +49,6 @@
                         play_date_end: string
                         fieldId: int
 
-/api/v1/bookings:
       get:
         security:
           - bearerAuth: []
@@ -76,7 +74,6 @@
                         play_date_end: string
                         fieldId: int
 
-/api/v1/bookings:
       put:
         security:
           - bearerAuth: []
@@ -102,7 +99,6 @@
                         play_date_end: string
                         fieldId: int
 
-/api/v1/bookings:
       delete:
         security:
           - bearerAuth: []
