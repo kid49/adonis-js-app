@@ -1,29 +1,29 @@
 definitions:
-  Register:
-    type: object
-    properties:
-      name:
-        type: string
-      email:
-        type: string
-      password:
-        type: string
-      role:
-        type: string
-    required:
-      - name
-      - email
-      - password
-      - role
+    Register:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        role:
+          type: string
+      required:
+        - name
+        - email
+        - password
+        - role
 
 definitions:
-  Login:
-    type: object
-    properties:
-      email:
-        type: string
-      password:
-        type: string
-    required:
-      - email
-      - password
+    Login:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      required:
+        - email
+        - password
