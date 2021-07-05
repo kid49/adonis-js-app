@@ -6,14 +6,14 @@
       - Booking
     responses:
       200:
-        description: success get all data booking
+        description: All Data Booking
         content:
           application/json:
             schemas:
               message:
                 type: string
                 example:
-                  message: success fetch booking
+                  message: Success Allow Data Booking
               data:
                 type: array
                 items:
@@ -24,7 +24,6 @@
                     play_date_end: string
                     fieldId: int
 
-
   post:
     security:
       - bearerAuth: []
@@ -32,14 +31,14 @@
       - Booking
     responses:
       200:
-        description: success get all data booking
+        description: Created Booking
         content:
           application/json:
             schemas:
               message:
                 type: string
                 example:
-                  message: success fetch booking
+                  message: Success Posted Booking
               data:
                 type: array
                 items:
@@ -57,14 +56,14 @@
       - Booking
     responses:
       200:
-        description: success get all data booking
+        description: Updated Data Booking
         content:
           application/json:
             schemas:
               message:
                 type: string
                 example:
-                  message: success fetch booking
+                  message: Success Updated Booking
               data:
                 type: array
                 items:
@@ -82,14 +81,14 @@
       - Booking
     responses:
       200:
-        description: success get all data booking
+        description: Deleted Booking
         content:
           application/json:
             schemas:
               message:
                 type: string
                 example:
-                  message: success fetch booking
+                  message: Deleted Data Booking
               data:
                 type: array
                 items:
@@ -108,14 +107,14 @@
       - Booking
     responses:
       200:
-        description: success get all data booking
+        description: Success Get Join Booking
         content:
           application/json:
             schemas:
               message:
                 type: string
                 example:
-                  message: success fetch booking
+                  message: Success Join Booking
               data:
                 type: array
                 items:

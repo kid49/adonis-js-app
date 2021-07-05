@@ -1,0 +1,101 @@
+/api/v1/fields:
+  get:
+    security:
+      - bearerAuth: []
+    tags:
+      - Fields
+    responses:
+      200:
+        description: success get all data fields
+        content:
+          application/json:
+            schemas:
+              message:
+                type: string
+                example:
+                  message: success fetch Venues
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id: int
+                    name: string
+                    type: string
+                    venue_id: int
+
+  post:
+    security:
+      - bearerAuth: []
+    tags:
+      - Fields
+    responses:
+      200:
+        description: success get all data fields
+        content:
+          application/json:
+            schemas:
+              message:
+                type: string
+                example:
+                  message: success fetch fields
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id: int
+                    name: string
+                    type: string
+                    venue_id: string
+
+
+  put:
+    security:
+      - bearerAuth: []
+    tags:
+      - Fields
+    responses:
+      200:
+        description: Success Updated Data Fields
+        content:
+          application/json:
+            schemas:
+              message:
+                type: string
+                example:
+                  message: Success Updated Fields
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id: int
+                    name: string
+                    type: string
+                    venue_id: int
+
+  delete:
+    security:
+      - bearerAuth: []
+    tags:
+      - Fields
+    responses:
+      200:
+        description: Deleted Fields by ID
+        content:
+          application/json:
+            schemas:
+              message:
+                type: string
+                example:
+                  message: Success Deleted By Id
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id: int
+                    name: string
+                    type: string
+                    venue_id: int
