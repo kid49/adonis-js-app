@@ -2,10 +2,6 @@ import { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 import Booking from "App/Models/Booking";
 import BookingValidator from "App/Validators/BookingValidator";
 
-interface FieldInterface {
-  name: string;
-}
-
 export default class BookingsController {
   /**
    * @swagger

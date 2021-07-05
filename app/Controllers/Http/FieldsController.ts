@@ -1,6 +1,5 @@
 import { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 import Field from "App/Models/Field";
-// import Venue from "App/Models/Venue";
 
 export default class FieldsController {
   /**
