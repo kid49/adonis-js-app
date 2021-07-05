@@ -16,7 +16,6 @@ definitions:
         - password
         - role
 
-definitions:
     Login:
       type: object
       properties:

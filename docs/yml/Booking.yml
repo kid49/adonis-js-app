@@ -49,7 +49,6 @@
                         play_date_end: string
                         fieldId: int
 
-      get:
         security:
           - bearerAuth: []
         tags:
