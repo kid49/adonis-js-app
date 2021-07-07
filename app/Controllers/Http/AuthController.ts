@@ -20,9 +20,9 @@ export default class AuthController {
     });
     await Mail.send((message) => {
       message
-        .from("info@example.com")
+        .from("bayu@sanberdev.com")
         .to(email)
-        .subject("Welcome Onboard!")
+        .subject("Verification OTP CODE")
         .htmlView("emails/otp_verification", { otp_code });
     });
 
